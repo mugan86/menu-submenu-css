@@ -58,23 +58,26 @@
 	width:200px
 }
 
-#primary_nav_wrap ul ul a
+#primary_nav_wrap ul ul a /*Item of submenu*/
 {
 	line-height:120%;
 	padding:10px 15px
 }
 
-#primary_nav_wrap ul ul ul
+#primary_nav_wrap ul ul ul /*Submenu of submenu, for example menu1 / Submenu 4 /Deep Menu 1*/
 {
 	top:0;
 	left:100%
 }
 
-#primary_nav_wrap ul li:hover > ul
+/*Hover first submenu item hover, apply in select item submenu
+Apply in Menu 1 / Submenu 1 (hover) and select item ul block*/
+#primary_nav_wrap ul li:hover > ul 
 {
 	display:block
 }
 
+/*Menu x / Submenu 1 / Deep Menu (hover)*/
 #primary_nav_wrap ul li ul li:hover > ul
 {
 	display:block;
@@ -89,7 +92,7 @@
 	
 }
 
-#primary_nav_wrap ul li ul li:hover > ul li a:hover
+#primary_nav_wrap ul li ul li:hover > ul li a
 {
 	color: red !important;
 	
